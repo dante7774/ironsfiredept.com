@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>SEE FD</title>
+</head>
+<body>  
+    <header>
+      <h1 class="siteTitle">Sauble-Elk-Eden Townships Fire Department</h1>
+        
+        <nav>
+          <div class="whiteNavBar">
+          </div>
+   
+          <div class="navBarItems">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Central Station</h2>
+            <p>6711 W 8 Mile Rd, Irons, Michigan 49644</p>
+            <iframe 
+              src="https://www.google.com/maps/embed/v1/place?key=YOUR_KEY
+                &q=6711+W+8+Mile+Rd,+Irons,+Michigan+49644"
+              width="600" 
+              height="300" 
+              frameborder="0" 
+              style="border:0" 
+              allowfullscreen>
+            </iframe>
+        </article>
+      
+        <article>
+            <h2>About</h2>
+            <p>Sauble-Elk-Eden Townships Fire Department (SEE FD) is also known as Irons Fire Department. The department is paid-on-call and provides fire, medical, and rescue services to its three township coverage area. The department also provides mutual aid to surrounding areas.</p>
+            <p><h3>Services:</h3></p>
+            <ul>
+              <li>Fire suppression</li>
+              <li>Medical first response</li>
+              <li>Vehicle extrication</li>
+              <li>Ice water rescue</li>
+              <li>Alarm, odor, and smoke investigation</li>
+              <
+              
+            </ul>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Dominic Hasbrouck</p>
+        <p>mail@dominic.works</p>
+    </footer>
+</body>
+</html>

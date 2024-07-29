@@ -1,37 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEE FD</title>
-
-    <link rel="stylesheet" href="./css/main.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <title>SEE FD</title>
 </head>
-<section id="page">
-
-    <header>    
-        Sandbox Site. v2!
+<body>  
+    <header>
+      <button class="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </button>
+      <img src="../pictures/graphics/logo.png" alt="Fire department cross" width="100px" height="100px">
+      <h1 class="siteTitle">Sauble-Elk-Eden Fire Department</h1>
     </header>
 
-
-    <nav>
-        
+    <!-- TWO COLUMNS -->
+    <nav class="mobile-nav">
+    <button class="close-menu">X</button>
+        <div class="nav-list">
+            <a href="../index.html">About</a>
+            <a href="../events.html">Events</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../pictures.html">Pictures</a>
+            <a href="../joinDepartment.html">Join Department</a>
+        </div>
     </nav>
 
-    <main>
-        New website coming soon!
+  
+    <div class="mainContainer">
+  
+      <nav>
+        <div class="whiteNavBar">
+        </div>
+  
+        <div class="navBarItems">
+            <a href="../index.html">About</a>
+            <a href="../events.html">Events</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../pictures.html">Pictures</a>
+            <a href="../joinDepartment.html">Join Department</a>
+        </div>
+      </nav>
+  
+      <main>
+        <article>
+                <h2>Burn Permits</h2>
+                <p>Please visit the Michigan DNR website to see if open burning is allowed in your township today. You must do this every time you wish to burn vegetation or leaves. Burning when not allowed, or openly burning prohibited items like building materials, could result in a citation. If you cause a forest fire, you could be liable for all the costs of that fire.</p>
+                <a href="https://www.dnr.state.mi.us/burnpermits/">DNR Burn Permits Map</a>
+            <br>
+                <a href="https://www.michigan.gov/-/media/Project/Websites/egle/Documents/Programs/AQD/Open-Burning/Open-Burning-Brochure.pdf">Open Burning Regulations (PDF)</a>
+        </article>
+          
+          <article>
+              <h2>Central Station</h2>
+              <p>6711 W 8 Mile Rd, Irons, Michigan 49644</p>
+              <div class="map-image">
+                <img src="../pictures/graphics/map.png" alt="Map of Central Station">
+              </div>
+              <script>
+                const imageContainer = document.querySelector('.map-image');
+                const image = document.querySelector('.map-image img');
+                let zoomLevel = 1;
+
+                window.addEventListener('scroll', () => {
+                  // Calculate new zoom level based on scroll position
+                  const scrollY = window.scrollY;
+                  const scrollMaxY = document.documentElement.scrollHeight - window.innerHeight;
+                  const zoomFactor = 1 + (scrollY / scrollMaxY) * 0.25; 
+
+                  zoomLevel = zoomFactor;
+
+                  // Apply zoom using CSS transform
+                  image.style.transform = `scale(${zoomLevel})`;
+                });
+              </script>
+          </article>
         
-    </main>
+          <article>
+              <h2>About</h2>
+              <p>Sauble-Elk-Eden Townships Fire Department (SEE FD, "Irons Fire Department") is located in Lake County, Michigan.  The department is staffed with paid-on-call firefighters and provides fire, medical, and rescue services to its three township coverage area. SEE FD provides mutual aid to surrounding jurisdictions as well. The new central fire station on West 8 Mile Road was opened in 2022 and replaces the old Station 1 and 2. Seven pieces of apparatus are housed at the central station, including two engines, two tenders, mini pumper, brush truck, and a quick response vehicle.</p>
+              <p><h3>Services</h3></p>
+              <ul>
+                <li>Fire suppression</li>
+                <li>Medical first response</li>
+                <li>Vehicle extrication</li>
+                <li>Ice water rescue</li>
+                <li>Alarm, odor, and smoke investigation</li>
+                <li>Pre-incident planning</li>
+                <li>Public education</li>
+              </ul>
+              <p><h3>Command Staff</h3></p>
+              <ul>
+                <li>Chief: Greg Bombich (Radio ID: 400)</li>
+                <li>Deputy Chief:  Joel Boyer (Radio ID: 401)</li>
+              </ul>
+          </article>
+      </main>
 
-    
+    </div>
+    <!-- end of TWO COLUMNS -->
 
-
-    <footer>
-        
+    <footer class="footer">
+        <p>&copy; 2024 Dominic Hasbrouck</p>
+        <p>mail@dominic.works</p>
     </footer>
 
-</section>
+  <script src="script.js"></script>
 
+  
+</body>
 </html>
